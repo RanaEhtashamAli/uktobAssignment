@@ -2,6 +2,8 @@
 
 # Project Setup:
 
+* Create a postgres database.
+
 * Take pull of this repository.
 * Create a new python virtual environment using following command:
   * For windows: python -m venv env
@@ -13,7 +15,8 @@
   * pip install -r requirements.txt
 
 * Once done with the above commands. Create a new file called .env in the root folder. Copy the content of .env.example 
-  file and paste it inside the .env file. Now update all the environment variable according to your local environment.
+  file and paste it inside the .env file. Now update all the environment variable according to your local environment. 
+  Provide postgres credential like DB_PASSWORD, DB_NAME, keep DB_HOST to localhost for local database and provide an OPEN_AI_KEY as well. 
 * Execute this command to migrate all the database tables: 
   * python manage.py migrate
 * Execute the following command to create a user in database:
